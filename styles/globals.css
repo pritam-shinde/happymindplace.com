@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 5s ease;
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -ms-transition: all 5s ease;
+  -o-transition: all 5s ease;
+}
+
+:root {
+  --heading-font: 'Cormorant Garamond', serif;
+  --para-font: 'Poppins', sans-serif;
+  --heading-color: #513125;
+  --subheading-color: #C47A5E;
+  --e-global-color-415ba29: #FFFDFA;
+  --e-global-color-secondary: #f4ede6;
+  --e-global-color-text: #B0B0B0;
+  --h1-font-size-desktop: 4.688rem;
+  --h1-font-size-mobile: 3.438rem;
+  --h2-font-size-desktop: 3.125rem;
+  --h2-font-size-mobile: 2.375rem;
+  --h3-font-size-desktop: 1.75rem;
+  --h3-font-size-mobile: 1.625rem;
+  --subtitle-font-size: 1rem;
+  --para-font-size: 0.875rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav li.nav-item .nav-link {
+  font-family: var(--para-font);
+  color: var(--heading-color) !important;
+  font-size: var(--para-font-size);
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+nav li.nav-item:hover .nav-link{
+  color: var(--subheading-color) !important;
+}
