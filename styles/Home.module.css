@@ -6,3 +6,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 600px){
+  .hero{
+    background-position: left;
+  }
+}

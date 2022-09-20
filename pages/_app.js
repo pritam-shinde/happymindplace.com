@@ -3,6 +3,7 @@ import Head from 'next/head';
 import '../styles/globals.css'
 import { Header, Footer } from '../components/components'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

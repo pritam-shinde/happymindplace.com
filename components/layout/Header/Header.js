@@ -1,9 +1,21 @@
 import { Box, Container, Grid } from '@mui/material'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Styles from '../../../styles/Header.module.css'
+import Logo from '../../../public/Logo/logo.png'
 
 const Header = () => {
+
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY >= 50){
+                document.querySelector('header').style.cssText = `background-color: #fff;`
+            }else if(window.scrollY < 50){
+                document.querySelector('header').style.cssText = `background-color: transparent; box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; box-shadow: none !important;`
+            }
+        })
+    })
+
     return (
         <>
             <header className={Styles.header}>
@@ -12,7 +24,11 @@ const Header = () => {
                         <Grid item xs={12} md={10} className="mx-auto">
                             <nav className="navbar navbar-expand-lg navbar-light">
                                 <div className="container-fluid">
-                                    <a className="navbar-brand" href="#">Navbar</a>
+                                    <Link href="/">
+                                        <a className="navbar-brand">
+                                            <img src={Logo.src} alt="logo" className='img-fluid' />
+                                        </a>
+                                    </Link>
                                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                         <span className="navbar-toggler-icon"></span>
                                     </button>
