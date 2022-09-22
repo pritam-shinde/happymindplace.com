@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import { Header, Footer } from '../components/components'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
+import "swiper/css/bundle";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

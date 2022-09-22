@@ -100,51 +100,132 @@ nav .navbar-brand {
   letter-spacing: 2px;
 }
 
-.brownFilledButton{
-  background-color: var(--subheading-color);
-  padding: 1.125rem 1.875rem;
-  border-radius: 0%;
-  -webkit-border-radius: 0%;
-  -moz-border-radius: 0%;
-  -ms-border-radius: 0%;
-  -o-border-radius: 0%;
+.brownFilledButton {
+  background-color: var(--subheading-color) !important;
+  padding: 1.125rem 1.875rem !important;
+  border-radius: 0% !important;
+  -webkit-border-radius: 0% !important;
+  -moz-border-radius: 0% !important;
+  -ms-border-radius: 0% !important;
+  -o-border-radius: 0% !important;
 }
 
-.brownFilledButton a{
-  color: #fff;
-  text-decoration: none;
+.brownFilledButton a {
+  color: #fff !important;
+  text-decoration: none !important;
   font-family: var(--para-font) !important;
-  letter-spacing: 1px;
+  letter-spacing: 1px !;
+
 }
 
-.brownFilledButton:hover{
+.brownFilledButton:hover {
   background-color: var(--heading-color);
 }
 
-.brownFilledButton:hover a{
+.brownFilledButton:hover a {
   color: #fff;
 }
 
-.MuiDivider-root::before, .MuiDivider-root::after{
+.MuiDivider-root::before,
+.MuiDivider-root::after {
   border-color: var(--heading-color) !important;
 }
 
-.courseDetails{
+.courseDetails {
   position: relative;
   top: -8rem;
-  background-image: url(../public/course/shap.jpg);
+  background-image: url('../public/course/shap.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
-#couterSec{
+#couterSec {
   height: auto;
   width: 100%;
-  background-image: url(../public/shapes/shape2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../public/shapes/shape2.png');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  opacity: 0.9;
+  background-repeat: no-repeat;
+}
+
+#newsletterSec {
+  height: 90vh;
+  width: 100%;
+  background-image: url('../public/newsletter/newsletter-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#newsletterSec #newsletter {
+  height: auto;
+  width: 100%;
+  background-image: url('../public/newsletter/snap.jpg');
+  background-size: cover;
+  background-position: 'center';
+}
+
+#newsletterSec #newsletter h2 {
+  color: #fff !important;
+}
+
+#newsletterSec #newsletter .brownFilledButton {
+  background-color: #fff !important;
+}
+
+#newsletterSec #newsletter .brownFilledButton a {
+  color: var(--subheading-color) !important;
+}
+
+#newsletterSec #newsletter .brownFilledButton svg {
+  fill: var(--subheading-color) !important;
+}
+
+#testimonialSec {
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../public/shapes/shape2.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#testimonialSec .testimonialSecPara {
+  font-family: var(--heading-font) !important;
+  font-size: 1.8rem !important;
+  color: var(--heading-color) !important;
+  font-weight: 600 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet {
+  color: #c4795e59 !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #C47A5E !important;
+
+}
+
+.swiper-pagination-bullet-active {
+  background: #C47A5E !important;
+}
+
+.MuiListItem-root .MuiListItemIcon-root {
+  min-width: 2rem !important;
+  color: var(--subheading-color) !important;
+}
+
+footer .MuiListItem-root .MuiListItemText-root .MuiTypography-root, footer .MuiListItem-root .MuiListItemText-root a{
+  color: #fff !important;
+  text-decoration: none;
+  font-family: var(--para-font) !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -163,6 +244,10 @@ nav .navbar-brand {
 
   nav .navbar-brand {
     width: 35%;
+  }
+
+  #newsletterSec {
+    height: auto;
   }
 }
 
