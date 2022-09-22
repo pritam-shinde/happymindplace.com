@@ -69,7 +69,7 @@ const Home = () => {
             </Grid>
           </Container>
         </section>
-        <section id="couterSec" style={{backgroundImage:`url(${AbstractBg})`}}>
+        <section id="couterSec" style={{backgroundImage:`url(${AbstractBg.src})`}}>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
@@ -125,12 +125,12 @@ const Home = () => {
             </Grid>
           </Container>
         </section>
-        <section className='mt-4' id="newsletterSec" style={{backgroundImage:`url(${NewsletterSEcBg})`}}>
+        <section className='mt-4' id="newsletterSec" style={{backgroundImage:`url(${NewsletterSEcBg.src})`}}>
           <Container maxWidth="xxl" style={{ height: "100%" }}>
             <Box py={5} style={{ height: "100%" }}>
               <Grid container style={{ height: "100%" }}>
                 <Grid item xs='10' className='mx-auto d-flex align-items-center'>
-                  <Box p={5} id="newsletter" style={{backgroundImage:`url(${NewsletterBg})`}}>
+                  <Box p={5} id="newsletter" style={{backgroundImage:`url(${NewsletterBg.src})`}}>
                     <Grid container>
                       <Grid item xs={12} md={10} lg={8} className="mx-auto">
                         <Box>
@@ -148,7 +148,7 @@ const Home = () => {
             </Box>
           </Container>
         </section>
-        <section id="testimonialSec" style={{backgroundImage:`url(${AbstractBg})`}}>
+        <section id="testimonialSec" style={{backgroundImage:`url(${AbstractBg.src})`}}>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">

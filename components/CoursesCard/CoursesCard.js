@@ -16,7 +16,7 @@ const CoursesCard = () => {
                         <Box>
                             <Image src={Course1} alt="course1" />
                         </Box>
-                        <Box p={3} className='mx-auto courseDetails' style={{display:"block", width:"90%", backgroundImage:CourseShape}}>
+                        <Box p={3} className='mx-auto courseDetails' style={{display:"block", width:"90%", backgroundImage:`url(${CourseShape.src})`}}>
                             <Typography variant='h3' align="center" className='text-white' gutterBottom>Asana Yoga</Typography>
                             <Typography className='para text-white'  align="center"  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</Typography>
                             <Box mt={2} className="d-flex justify-content-center align-items-center">
@@ -30,7 +30,7 @@ const CoursesCard = () => {
                         <Box>
                             <Image src={Course2} alt="course1" />
                         </Box>
-                        <Box p={3} className='mx-auto courseDetails' style={{display:"block", width:"90%", backgroundImage:CourseShape}}>
+                        <Box p={3} className='mx-auto courseDetails' style={{display:"block", width:"90%", backgroundImage:`url(${CourseShape.src})`}}>
                             <Typography variant='h3' align="center" className='text-white' gutterBottom>Meditation</Typography>
                             <Typography className='para text-white'  align="center"  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</Typography>
                             <Box mt={2} className="d-flex justify-content-center align-items-center">
