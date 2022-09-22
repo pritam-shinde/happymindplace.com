@@ -228,6 +228,27 @@ footer .MuiListItem-root .MuiListItemText-root .MuiTypography-root, footer .MuiL
   font-family: var(--para-font) !important;
 }
 
+
+/* About */
+
+#abouthero{
+  height: 87vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0% 21%;
+  background-repeat: no-repeat;
+}
+
+#about_aboutSec{
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0% 21%;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: var(--h2-font-size-mobile) !important;
@@ -246,7 +267,7 @@ footer .MuiListItem-root .MuiListItemText-root .MuiTypography-root, footer .MuiL
     width: 35%;
   }
 
-  #newsletterSec {
+  #newsletterSec, #about_aboutSec {
     height: auto;
   }
 }

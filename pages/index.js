@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
-import { Hero } from '../sections/sections'
 import { Box, Container, Divider, Grid, Typography } from '@mui/material'
 import { BrownFilledButton, CoursesCard, SectionalHeading } from '../components/components'
 import Flower from '../public/Home/counter/flower.png'
