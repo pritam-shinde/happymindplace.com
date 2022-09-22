@@ -13,6 +13,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
+import AbstractBg from '../public/shapes/shape2.png'
+import NewsletterSEcBg from '../public/newsletter/newsletter-bg.jpg'
+import NewsletterBg from '../public/newsletter/snap.jpg'
 
 const Home = () => {
   const [width, setWidth] = useState();
@@ -66,7 +69,7 @@ const Home = () => {
             </Grid>
           </Container>
         </section>
-        <section id="couterSec">
+        <section id="couterSec" style={{backgroundImage:`url(${AbstractBg})`}}>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
@@ -122,12 +125,12 @@ const Home = () => {
             </Grid>
           </Container>
         </section>
-        <section className='mt-4' id="newsletterSec">
+        <section className='mt-4' id="newsletterSec" style={{backgroundImage:`url(${NewsletterSEcBg})`}}>
           <Container maxWidth="xxl" style={{ height: "100%" }}>
             <Box py={5} style={{ height: "100%" }}>
               <Grid container style={{ height: "100%" }}>
                 <Grid item xs='10' className='mx-auto d-flex align-items-center'>
-                  <Box p={5} id="newsletter">
+                  <Box p={5} id="newsletter" style={{backgroundImage:`url(${NewsletterBg})`}}>
                     <Grid container>
                       <Grid item xs={12} md={10} lg={8} className="mx-auto">
                         <Box>
@@ -145,7 +148,7 @@ const Home = () => {
             </Box>
           </Container>
         </section>
-        <section id="testimonialSec">
+        <section id="testimonialSec" style={{backgroundImage:`url(${AbstractBg})`}}>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">

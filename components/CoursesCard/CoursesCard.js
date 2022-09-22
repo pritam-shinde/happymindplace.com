@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Course1 from '../../public/course/course-1.jpg'
 import Course2 from '../../public/course/course-2.jpg'
 import { BrownFilledButton } from '../components'
+import CourseShape from '../../public/course/shap.jpg'
+
 
 const CoursesCard = () => {
     return (
@@ -14,7 +16,7 @@ const CoursesCard = () => {
                         <Box>
                             <Image src={Course1} alt="course1" />
                         </Box>
-                        <Box p={3} className='mx-auto courseDetails' style={{display:"block", width:"90%"}}>
+                        <Box p={3} className='mx-auto courseDetails' style={{display:"block", width:"90%", backgroundImage:CourseShape}}>
                             <Typography variant='h3' align="center" className='text-white' gutterBottom>Asana Yoga</Typography>
                             <Typography className='para text-white'  align="center"  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</Typography>
                             <Box mt={2} className="d-flex justify-content-center align-items-center">
@@ -28,7 +30,7 @@ const CoursesCard = () => {
                         <Box>
                             <Image src={Course2} alt="course1" />
                         </Box>
-                        <Box p={3} className='mx-auto courseDetails' style={{display:"block", width:"90%"}}>
+                        <Box p={3} className='mx-auto courseDetails' style={{display:"block", width:"90%", backgroundImage:CourseShape}}>
                             <Typography variant='h3' align="center" className='text-white' gutterBottom>Meditation</Typography>
                             <Typography className='para text-white'  align="center"  >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</Typography>
                             <Box mt={2} className="d-flex justify-content-center align-items-center">
