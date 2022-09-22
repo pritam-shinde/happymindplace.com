@@ -9,9 +9,11 @@ const Header = () => {
     useEffect(()=>{
         window.addEventListener('scroll',()=>{
             if(window.scrollY >= 50){
-                document.querySelector('header').style.cssText = `background-color: #fff;`
+                document.querySelector('header').style.cssText = `
+                background-color: #fff;
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;`
             }else if(window.scrollY < 50){
-                document.querySelector('header').style.cssText = `background-color: transparent; box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; box-shadow: none !important;`
+                document.querySelector('header').style.cssText = `background-color: transparent; box-shadow: none !important;`
             }
         })
     })

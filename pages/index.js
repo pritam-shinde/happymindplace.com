@@ -16,6 +16,8 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 import AbstractBg from '../public/shapes/shape2.png'
 import NewsletterSEcBg from '../public/newsletter/newsletter-bg.jpg'
 import NewsletterBg from '../public/newsletter/snap.jpg'
+import {ArrowRightAlt} from '@mui/icons-material'
+import Styles from '../styles/Home.module.css'
 
 const Home = () => {
   const [width, setWidth] = useState();
@@ -32,8 +34,30 @@ const Home = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/" />
       </Head>
-      <Hero />
       <main>
+        <section>
+        <Container maxWidth="xxl" className={`${Styles.hero}`}>
+      <Grid container style={{height:"inherit"}}>
+        <Grid item xs={12} md={10} className="mx-auto" style={{height:"inherit"}}>
+          <Box style={{height:"inherit"}}>
+            <Grid container style={{height:"inherit"}}>
+              <Grid item xs={12} sm={6} style={{height:"inherit"}} className="d-flex align-items-center">
+                <Box data-aos="fade-up">
+                <Divider className='subtitle' data-aos="fade-up">SAVASA YOGA</Divider>
+                <Typography variant='h1' gutterBottom data-aos="fade-up">Bend your mind, <br /> inspire yourself</Typography>
+                <Typography className='para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</Typography>
+                <Box mt={4} data-aos="fade-up">
+                  <BrownFilledButton navlink={true} btnLink="/" btnTitle="Get Started" />
+                </Box>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={6} style={{height:"inherit"}}></Grid>
+            </Grid>
+          </Box>
+        </Grid>
+      </Grid>
+    </Container>
+        </section>
         <section style={{ backgroundColor: "var(--e-global-color-secondary)" }}>
           <Container maxWidth="xxl">
             <Grid container>
@@ -41,10 +65,10 @@ const Home = () => {
                 <Box py={width < 600 ? 5 : 10}>
                   <Grid container>
                     <Grid item xs={12} md={8} className="mx-auto">
-                      <Box className='animate__animated animate__fadeInUp'>
+                      <Box data-aos="fade-up">
                         <SectionalHeading title="Happiness is a decision, not a destination. Realize it with us!" variant="h2" subtitle="ABOUT SAVASA" align='center' />
-                        <Typography className='para' align="center">Quisque maximus lacus sem, vitae maximus tortor venenatis in. Ut porttitor velit nec nibh dignissim venenatis. Vestibulum non ex id dolor commodo vestibulum. Nulla dignissim quam et augue consectetur porttitor. Nulla dignissim quam et augue consectetur porttitor.</Typography>
-                        <Box mt={3} className="d-flex justify-content-center align-items-center">
+                        <Typography className='para' align="center" data-aos="fade-up">Quisque maximus lacus sem, vitae maximus tortor venenatis in. Ut porttitor velit nec nibh dignissim venenatis. Vestibulum non ex id dolor commodo vestibulum. Nulla dignissim quam et augue consectetur porttitor. Nulla dignissim quam et augue consectetur porttitor.</Typography>
+                        <Box mt={3} className="d-flex justify-content-center align-items-center" data-aos="fade-up">
                           <BrownFilledButton btnLink="/" btnTitle="Learn More" navlink={true} />
                         </Box>
                       </Box>
@@ -60,7 +84,7 @@ const Home = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box py={width < 600 ? 5 : 10}>
-                  <Box mb={5} className='animate__animated animate__fadeInUp'>
+                  <Box mb={5} data-aos="fade-up">
                     <SectionalHeading title="Let go of stress and anxiety" variant="h2" subtitle="OUR COURSES" align='center' />
                   </Box>
                   <CoursesCard />
@@ -76,7 +100,7 @@ const Home = () => {
                 <Box py={5}>
                   <Grid container spacing={3}>
                     <Grid item xs={12} sm={6} lg={3}>
-                      <Box className="d-flex flex-column justify-content-center align-items-center">
+                      <Box className="d-flex flex-column justify-content-center align-items-center" >
                         <Box style={{ height: "3rem", width: "3rem" }} className="d-flex justify-content-center align-items-center">
                           <img src={smile.src} alt="Flower" className='img-fluid' />
                         </Box>
@@ -87,7 +111,7 @@ const Home = () => {
                       </Box>
                     </Grid>
                     <Grid item xs={12} sm={6} lg={3}>
-                      <Box className="d-flex flex-column justify-content-center align-items-center">
+                      <Box className="d-flex flex-column justify-content-center align-items-center" >
                         <Box style={{ height: "3rem", width: "3rem" }} className="d-flex justify-content-center align-items-center">
                           <img src={Flower.src} alt="Flower" className='img-fluid' />
                         </Box>
@@ -98,7 +122,7 @@ const Home = () => {
                       </Box>
                     </Grid>
                     <Grid item xs={12} sm={6} lg={3}>
-                      <Box className="d-flex flex-column justify-content-center align-items-center">
+                      <Box className="d-flex flex-column justify-content-center align-items-center" >
                         <Box style={{ height: "3rem", width: "3rem" }} className="d-flex justify-content-center align-items-center">
                           <img src={human.src} alt="Flower" className='img-fluid' />
                         </Box>
@@ -109,7 +133,7 @@ const Home = () => {
                       </Box>
                     </Grid>
                     <Grid item xs={12} sm={6} lg={3}>
-                      <Box className="d-flex flex-column justify-content-center align-items-center">
+                      <Box className="d-flex flex-column justify-content-center align-items-center" >
                         <Box style={{ height: "3rem", width: "3rem" }} className="d-flex justify-content-center align-items-center">
                           <img src={msg.src} alt="Flower" className='img-fluid' />
                         </Box>

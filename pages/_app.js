@@ -5,11 +5,20 @@ import { Header, Footer } from '../components/components'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import "swiper/css/bundle";
+import 'aos/dist/aos.css'
+import Script from 'next/script';
+import AOS from 'aos';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle");
   }, []);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh()
+  })
+
   return (<>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,6 +27,7 @@ function MyApp({ Component, pageProps }) {
     <Header />
     <Component {...pageProps} />
     <Footer />
+    <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></Script>
   </>)
 }
 
