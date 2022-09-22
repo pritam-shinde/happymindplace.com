@@ -69,7 +69,7 @@ const Home = () => {
             </Grid>
           </Container>
         </section>
-        <section id="couterSec" style={{backgroundImage:`url(${AbstractBg.src})`}}>
+        <section id="couterSec" style={{backgroundImage:`linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${AbstractBg.src})`}}>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
@@ -148,7 +148,7 @@ const Home = () => {
             </Box>
           </Container>
         </section>
-        <section id="testimonialSec" style={{backgroundImage:`url(${AbstractBg.src})`}}>
+        <section id="testimonialSec" style={{backgroundImage:`linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(${AbstractBg.src})`}}>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
