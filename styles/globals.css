@@ -249,6 +249,14 @@ footer .MuiListItem-root .MuiListItemText-root .MuiTypography-root, footer .MuiL
   background-repeat: no-repeat;
 }
 
+#importanceSec .imp, .bg{
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: var(--h2-font-size-mobile) !important;

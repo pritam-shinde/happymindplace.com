@@ -19,15 +19,26 @@ import {ArrowRightAlt} from '@mui/icons-material'
 import Styles from '../styles/Home.module.css'
 
 const Home = () => {
-  const [width, setWidth] = useState();
+  const [show, setShow] = useState(false)
+  const [width, setWidth] = useState()
 
-  useEffect(() => {
-    setWidth(window.innerWidth)
-  }, [width])
+useEffect(()=>{
+  if(typeof window !== undefined){
+    setShow(true)
+  }else{
+    setShow(false)
+  }
+},[])
 
+
+useEffect(()=>{
+  setWidth(window.innerWidth)
+},[width])
   return (
     <>
-      <Head>
+    {
+      show ? <>
+        <Head>
         <title>Savasa - Yoga & Meditation Elementor Template Kit Preview - ThemeForest</title>
         <meta name="description" content="" />
         <meta name="robots" content="index" />
@@ -215,6 +226,8 @@ const Home = () => {
           </Container>
         </section>
       </main>
+      </> : null
+    }
     </>
   )
 }
